@@ -1,0 +1,56 @@
+/* ! REFER TO GENERAL FOR STYLES */
+
+/* $ START OF THE PAGE */
+
+.info-application {
+    height: 1000px;
+}
+
+.info-application-heading {
+    background-color: var(--green);
+    display: flex;
+    justify-content: center !important;
+    color: var(--white);
+}
+
+.modal-dialog {
+    max-width: 1000px !important;
+}
+
+.info p {
+    text-align: start;
+    margin-top: 40px;
+}
+
+.info ul li {
+    text-align: start;
+}
+
+.modal-footer {
+    padding: 0 !important;   
+}
+
+.info-application-close-btn {
+    width: 100%;
+    height: 50px;
+    background-color: var(--green);
+    margin: 0px !important;
+    border: none;
+    transition: 300ms;
+    font-size: 1.75rem !important;
+    color: var(--white);
+}
+
+.info-application-close-btn:hover {
+    background-color: var(--green-hover);
+    
+}
+
+/* % Application Check List */
+
+.application-check-list {
+    width: fit-content;
+    text-align: start;
+    margin: 30px;
+    font-size: 23px;
+}

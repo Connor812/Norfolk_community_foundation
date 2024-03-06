@@ -1,0 +1,42 @@
+/* ! REFER TO GENERAL FOR STYLES */
+
+/* $ START OF THE PAGE */
+
+.content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form {
+    width: 100%;
+    max-width: 800px;
+    border: 2px solid var(--black);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.input-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input-container input {
+    margin-bottom: 10px;
+}
+
+.input-container div {
+    width: 100%;
+}
+
+.leaf-img {
+    margin: 10px;
+}
+
+@media screen and (max-width: 657px) {
+    .leaf-img {
+        display: none;
+    }
+}

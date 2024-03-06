@@ -1,0 +1,22 @@
+/* ! REFER TO GENERAL FOR STYLES */
+
+/* $ START OF THE PAGE */
+
+.projects-container > * {
+    width: 420px !important;
+    border: 2px solid var(--black);
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+
+.projects-container img {
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+#carousel {
+    width: 80%;
+    margin-bottom: 20px;
+}

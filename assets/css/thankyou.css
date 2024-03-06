@@ -1,0 +1,20 @@
+#thank-you, #failed {
+    min-width: 375px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--black);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.75);
+}
+
+#logo {
+    border: 5px solid var(--green);
+    width: 100%;
+    max-width: 300px;
+    margin-bottom: 20px;
+}

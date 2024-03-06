@@ -1,0 +1,13 @@
+.display-container {
+    width: 70%;
+    border: 2px solid var(--black);
+    border-radius: 10px;
+}
+
+.display-container {
+    padding: 10px;
+}
+
+.display-content>* {
+    margin: 10px;
+}

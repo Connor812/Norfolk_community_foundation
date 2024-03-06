@@ -1,0 +1,203 @@
+:root {
+    --green-hover: rgb(69, 194, 69);
+    --green: rgb(0, 155, 0);
+    --white: rgb(244, 239, 239);
+    --black: rgb(23, 23, 23);
+    --blue: #0d6efd;
+    --blue-hover: #3f8cff;
+}
+
+/* # Main Components */
+
+body,
+html {
+    width: 100%;
+    height: 100vh !important;
+    margin: 0;
+    padding: 0;
+    font-family: 'Dharma Gothic M', sans-serif;
+}
+
+/* & Buttons */
+
+.button {
+    font-size: 2rem;
+    height: 60px;
+    width: auto;
+    color: var(--white);
+    padding: 0 30px;
+    background-color: var(--green);
+    border: 2px solid var(--black);
+    border-radius: 10px;
+    transition: 300ms;
+}
+
+.button:disabled {
+    opacity: 70%;
+    cursor: not-allowed;
+}
+
+.button:hover:not(:disabled) {
+    background-color: var(--green-hover);
+}
+
+.action-btn-container {
+    margin: 20px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.action-button {
+    border-radius: 20px;
+    border: 2px solid var(--black);
+    color: var(--white);
+    background-color: var(--blue);
+    padding: 3px 50px;
+    transition: 200ms;
+    text-decoration: none;
+}
+
+.action-button:hover {
+    background-color: var(--blue-hover);
+}
+
+.circle {
+    display: block;
+    width: 30px;
+    height: 30px;
+    border: 2px solid var(--black);
+    border-radius: 50%;
+    transition: 300ms;
+}
+
+.circle:hover {
+    background-color: var(--green-hover);
+}
+
+
+.heading {
+    font-size: 70px;
+}
+
+@media screen and (max-width: 580px) {
+    .heading {
+        font-size: 50px;
+    }
+}
+
+.sub-heading {
+    font-size: 50px;
+}
+
+/* $ Navigation Buttons */
+
+.index-button-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 150px;
+}
+
+.index-button-container a {
+    display: block;
+    width: 140px;
+    height: 140px;
+    border: 3px solid var(--black);
+    border-radius: 8px;
+    background-color: var(--white);
+    transition: 300ms;
+    text-decoration: none;
+    color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.index-button-container a:hover {
+    background-color: var(--green);
+    color: var(--black);
+    font-size: 20px;
+}
+
+.button-active {
+    transition: 500ms;
+    background-color: var(--green) !important;
+    font-size: 20px;
+}
+
+/* $ End of Navigation Buttons */
+
+.blue {
+    color: var(--blue);
+}
+
+.green {
+    color: var(--green);
+}
+
+main {
+    width: 100%;
+    height: 78.2%;
+    display: flex;
+}
+
+.website-container {
+    margin-top: 40px;
+    float: right;
+    position: absolute;
+    right: 10px;
+    width: 60%;
+    height: 950px;
+    border: 2px solid var(--black);
+}
+
+.edit-section {
+    width: 38%;
+    height: 100%;
+    padding: 10px;
+}
+
+/* ^ Tables */
+
+table {
+    width: 100%;
+}
+
+tr {
+    text-align: start;
+    display: flex;
+    justify-content: space-around;
+    transition: 200ms;
+}
+
+tbody tr:hover,
+tbody tr:hover a {
+    cursor: pointer;
+    color: var(--green-hover);
+}
+
+td {
+    width: 33.33%;
+    text-align: start;
+    margin: 0px 20px;
+}
+
+td a {
+    text-decoration: none;
+    color: var(--black);
+    width: 100%;
+    height: 100%;
+}
+
+th {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+tbody> :nth-child(even) {
+    background-color: rgba(128, 128, 128, 0.247);
+}

@@ -1,0 +1,181 @@
+/* ! REFER TO GENERAL.CSS FOR MAIN STYLES */
+
+/* $ START of the page */
+
+.objectives {
+    max-width: 500px;
+    text-align: start;
+}
+
+.donation-card {
+    border: 2px solid var(--black);
+    padding: 10px;
+    min-height: 600px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.helping-community {
+    margin-top: 30px;
+}
+
+@media screen and (max-width: 850px) {
+    .helping-community-heading img {
+        display: none;
+    }
+}
+
+
+.reasons-to-donate {
+    display: flex;
+    width: 90%;
+}
+
+@media screen and (max-width: 700px) {
+    .reasons-to-donate {
+        display: block;
+        width: 100%;
+    }
+}
+
+.reasons-to-donate-container {
+    margin: 10px;
+    padding: 10px;
+}
+
+.reasons-to-donate-container div {
+    margin: 10px;
+}
+
+/* @ Funding section and featured fund cards */
+
+.fund-container {
+    width: 100%;
+    height: auto;
+    border: 2px solid var(--black);
+    display: flex;
+    padding: 20px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+@media screen and (max-width: 780px) {
+    .fund-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .leaf-img {
+        display: none;
+    }
+
+    .fund-container:nth-child(even) {
+        flex-direction: column !important;
+    }
+
+    .description-fund-heading {
+        flex-direction: column !important;
+    }
+}
+
+.fund-container:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.image-fund-container:nth-child(even) {
+    float: left;
+}
+
+.image-fund-container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    align-items: center;
+}
+
+.image-fund-container img {
+    width: 100%;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.description-fund-container {
+    width: 100%;
+    padding: 20px;
+}
+
+.description-fund-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fund-container:nth-child(even) .description-fund-heading {
+    flex-direction: row-reverse;
+}
+
+.donate-btn {
+    background-color: var(--blue);
+    width: 170px;
+    height: 60px;
+    font-size: 2rem;
+    border: 2px solid var(--black);
+    border-radius: 10px;
+    transition: 300ms;
+    color: var(--white);
+}
+
+.donate-btn:hover {
+    background-color: var(--blue-hover);
+}
+
+/* ^ Scholarships container */
+
+.donations-recipients-container {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-gap: 30px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 870px) {
+    .donations-recipients-container {
+        grid-template-columns: 100%;
+    }
+}
+
+.scholarship-item {
+    border: 1px solid #ccc;
+    text-align: center;
+    border: 2px solid var(--black);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.scholarship-item h3 {
+    border-bottom: 2px solid var(--black);
+    padding: 5px;
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+.scholarship-item button {
+    border: none;
+    border-top: 2px solid var(--black);
+    background-color: var(--blue);
+    width: 100%;
+    height: 60px;
+    font-size: 30px;
+    color: var(--white);
+    transition: 300ms;
+}
+
+.scholarship-item button:hover {
+    background-color: var(--blue-hover);
+}

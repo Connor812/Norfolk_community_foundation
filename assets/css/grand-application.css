@@ -1,0 +1,104 @@
+body {
+    position: relative;
+}
+
+.content-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.signup-form {
+    width: 100%;
+    max-width: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+    .input-field {
+        width: 100%;
+        display: block !important;
+        margin: 0px !important;
+    }
+
+    .input-field label {
+        width: 100%;
+        text-align: start;
+    }
+
+    .input-field input,
+    .input-field textarea {
+        width: 100% !important;
+        margin-bottom: 5px;
+    }
+
+    .signup-form {
+        padding: 10px;
+    }
+
+    .next-btn-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+.input-field {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.input-field input,
+.input-field textarea {
+    width: 70%;
+}
+
+.input-field label {
+    white-space: nowrap;
+}
+
+.submit-container {
+    position: sticky;
+    top: auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.next-btn-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+@media screen and (max-width: 800px) {
+    .leaf-img {
+        display: none;
+    }
+}
+
+.next-arrow {
+    fill: var(--blue);
+    transition: 200ms;
+}
+
+.next-arrow:hover {
+    cursor: pointer;
+    fill: var(--blue-hover);
+    width: 55px;
+    height: 55px;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid var(--black);
+    transition: 300ms;
+}
+
+.active {
+    background-color: var(--green);
+}

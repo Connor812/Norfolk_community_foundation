@@ -1,0 +1,20 @@
+/* ! REFER TO GENERAL.CSS FOR MAIN STYLES */
+
+/* $ START of the page */
+
+.about-donations p {
+    margin: 0;
+}
+
+.about-donations span {
+    font-size: 60px;
+    color: var(--green)
+}
+
+.director-container > * {
+    margin-bottom: 30px;
+}
+
+.director-item {
+    width: fit-content;
+}
